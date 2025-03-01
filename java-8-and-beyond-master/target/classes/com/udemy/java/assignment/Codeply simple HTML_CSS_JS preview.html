@@ -1,0 +1,300 @@
+
+<!-- saved from url=(0060)https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="generator" content="Codeply">
+  <title>Codeply simple HTML/CSS/JS preview</title>
+  <!--<base target="_self">--><base href="." target="_self"> 
+
+  <link rel="stylesheet" href="./Codeply simple HTML_CSS_JS preview_files/normalize.min.css">  
+  
+
+  <link rel="stylesheet" href="./Codeply simple HTML_CSS_JS preview_files/bootstrap.min.css">
+
+  <style> 
+.dropdown-menu > li.kopie > a {
+    padding-left:5px;
+}
+ 
+.dropdown-submenu {
+    position:relative;
+}
+.dropdown-submenu>.dropdown-menu {
+   top:0;left:100%;
+   margin-top:-6px;margin-left:-1px;
+   -webkit-border-radius:0 6px 6px 6px;-moz-border-radius:0 6px 6px 6px;border-radius:0 6px 6px 6px;
+ }
+  
+.dropdown-submenu > a:after {
+  border-color: transparent transparent transparent #333;
+  border-style: solid;
+  border-width: 5px 0 5px 5px;
+  content: " ";
+  display: block;
+  float: right;  
+  height: 0;     
+  margin-right: -10px;
+  margin-top: 5px;
+  width: 0;
+}
+ 
+.dropdown-submenu:hover>a:after {
+    border-left-color:#555;
+ }
+
+.dropdown-menu > li > a:hover, .dropdown-menu > .active > a:hover {
+  text-decoration: underline;
+}  
+  
+@media (max-width: 767px) {
+
+  .navbar-nav  {
+     display: inline;
+  }
+  .navbar-default .navbar-brand {
+    display: inline;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: #fff;
+  }
+  .navbar-default .navbar-nav .dropdown-menu > li > a {
+    color: red;
+    background-color: #ccc;
+    border-radius: 4px;
+    margin-top: 2px;   
+  }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a {
+     color: #333;
+   }
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover,
+   .navbar-default .navbar-nav .open .dropdown-menu > li > a:focus {
+     background-color: #ccc;
+   }
+
+   .navbar-nav .open .dropdown-menu {
+     border-bottom: 1px solid white; 
+     border-radius: 0;
+   }
+  .dropdown-menu {
+      padding-left: 10px;
+  }
+  .dropdown-menu .dropdown-menu {
+      padding-left: 20px;
+   }
+   .dropdown-menu .dropdown-menu .dropdown-menu {
+      padding-left: 30px;
+   }
+   li.dropdown.open {
+    border: 0px solid red;
+   }
+
+}
+ 
+@media (min-width: 768px) {
+  ul.nav li:hover > ul.dropdown-menu {
+    display: block;
+  }
+  #navbar {
+    text-align: center;
+  }
+}  
+</style>
+</head>
+<body>
+  
+<div id="navbar">    
+  <nav class="navbar navbar-default navbar-static-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+              <a class="navbar-brand" href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Brand</a>
+            </div>
+            
+            <div class="collapse navbar-collapse" id="navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Active Link</a></li>
+                    <li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Link</a></li>
+                  
+                    <li class="dropdown">
+                      <a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a> 
+                      
+                        <ul class="dropdown-menu">
+                          <li class="kopie"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown</a></li>
+                            <li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Link 1</a></li>
+                            <li class="active"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Link 2</a></li>
+                            <li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Link 3</a></li>
+                          
+                            <li class="dropdown dropdown-submenu"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 4</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Link 4</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 4.1</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 4.2</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 4.3</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 4.4</a></li>
+                                                                      
+								</ul>
+							</li>
+                          
+                            <li class="dropdown dropdown-submenu"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Link 5</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Link 5</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 5.1</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 5.2</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 5.3</a></li>
+									
+									<li class="dropdown dropdown-submenu"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
+										<ul class="dropdown-menu">
+                                            <li class="kopie"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 5.4</a></li>
+											<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 5.4.1</a></li>
+											<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Submenu Link 5.4.2</a></li>
+											
+											
+										</ul>
+									</li>                           
+								</ul>
+							</li>                                   
+                        </ul>
+                    </li>
+                    <li class="dropdown"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="kopie"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2</a></li>
+                            <li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Link 1</a></li>
+                            <li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Link 2</a></li>
+                            <li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Link 3</a></li>
+                            
+                            <li class="dropdown dropdown-submenu"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 4</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Link 4</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 4.1</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 4.2</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 4.3</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 4.4</a></li>
+                                   
+								</ul>
+							</li>
+                            <li class="dropdown dropdown-submenu"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown2 Link 5</a>
+								<ul class="dropdown-menu">
+                                    <li class="kopie"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown Link 5</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 5.1</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 5.2</a></li>
+									<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 5.3</a></li>
+									<li class="dropdown dropdown-submenu"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#" class="dropdown-toggle" data-toggle="dropdown">Dropdown Submenu Link 5.4</a>
+										<ul class="dropdown-menu">
+                                            <li class="kopie"><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 5.4</a></li>
+											<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 5.4.1</a></li>
+											<li><a href="https://vins-udemy.s3.amazonaws.com/java/html/drop-down.html#">Dropdown2 Submenu Link 5.4.2</a></li>
+											
+										</ul>
+									</li>                                  
+								</ul>
+							</li>                                  
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </nav>
+</div>
+
+
+    
+
+  <script src="./Codeply simple HTML_CSS_JS preview_files/jquery-1.12.4.min.js.download"></script>
+
+  <script src="./Codeply simple HTML_CSS_JS preview_files/bootstrap.min.js.download"></script>
+
+  <script>
+  
+  </script>
+  <script>
+    // prevent navigation
+    document.addEventListener("DOMContentLoaded", function() {
+      var links = document.getElementsByTagName("A");
+      for(var i=0; i < links.length; i++) {
+        links[i].addEventListener("click", function(e) {
+          var href = this.getAttribute("href")
+
+          if (!href) {
+            return
+          }
+
+          if (href==='#') {
+            // hash only ('#')
+            console.debug('Internal nav allowed by Codeply');
+          }
+          else if (this.hash) {
+            // hash with tag ('#foo')
+            var element = null
+            try {
+              element = document.querySelector(this.hash)
+            }
+            catch(e) {
+              console.debug('Codeply internal nav querySelector failed')
+            }
+            if (element) {
+              // scroll to anchor
+              e.preventDefault();
+              const top = element.getBoundingClientRect().top + window.pageYOffset
+              window.scrollTo({top, behavior: 'smooth'})
+              console.debug('Internal nav anchor controlled by Codeply');
+            }
+            else {
+              // allow javascript routing
+              console.debug('Internal nav route allowed by Codeply');
+            }
+          }
+          else if (href.indexOf("/p/")===0 || href.indexOf("/v/")===0) {
+            // special multi-page routing
+            console.debug('Special internal page route: ' + href)
+
+            var l = href.replace('/p/','/v/')
+
+            // reroute
+            e.preventDefault()
+            var newLoc = l + '?from=internal'
+            console.debug('Internal view will reroute to ' + newLoc) 
+            location.href = newLoc
+          }
+          else if (href.indexOf("./")===0) {
+            // special multi-page routing
+            console.debug('Special internal ./ route: ' + href)
+
+            var u = parent.document.URL.split("/")
+            var pn = href.split("/")[1]
+            var plyId = u[u.length-1]
+
+            if (plyId.indexOf('?from')>-1) {
+              // already rerouted this
+              console.debug('already rerouted')
+              plyId = u[u.length-2]
+            }
+
+            var l = plyId + '/' + pn
+            
+            console.debug(u)
+            console.debug(pn)
+            console.debug('l',l)
+
+            // reroute
+            e.preventDefault()
+            var newLoc = '/v/' + l + '?from=internal'
+            console.debug('Internal page will reroute to ' + newLoc) 
+            location.href = newLoc
+          }
+          else {
+            // no external links
+            e.preventDefault();
+            console.debug('External nav prevented by Codeply');
+          }
+          return false;
+        })
+      }
+    }, false);
+  </script>
+
+
+</body></html>

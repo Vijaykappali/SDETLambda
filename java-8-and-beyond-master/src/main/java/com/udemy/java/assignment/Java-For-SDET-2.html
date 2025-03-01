@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<!-- saved from url=(0071)https://vins-udemy.s3.amazonaws.com/java/html/java8-payment-screen.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+  <title>Java-For-SDET</title>
+<script src="./Java-For-SDET-2_files/jquery.min.js.download"></script><script>
+$(document).ready(function() {
+	var price = 999;
+	$('td#status').text("");
+	$('td#price').text(price);
+    $('input#couponbtn').click(function(){
+		var coupon = $('#coupon').val();
+		if(coupon == 'FREEUDEMY'){
+			price = 0;
+		}else if(coupon == 'PARTIALUDEMY'){
+			price = 299;
+		}
+		$('td#price').text(price);
+	});
+    $('input#buy').click(function(){
+		var status = 'FAIL'
+		if(price === 0){
+			status = 'PASS';
+		}else{
+			var cc = $('#cc').val();
+			var year = parseInt($('#year').val());
+			var cvv = $('#cvv').val();
+			if(cc == '4111111111111111' && year > 2022 && cvv == '123' ){
+				status = 'PASS';
+			}
+		}
+		$('td#status').text(status);
+    	$(this).prop('disabled', true);
+    })
+
+});
+</script></head>
+
+
+
+<body>
+	<img src="./Java-For-SDET-2_files/amazon.jpeg">
+<table border="1" width="80%" cellpadding="10" id="ecomsite">
+	<tbody>
+		<tr>
+			<td align="center">
+				<img height="250" width="400" src="./Java-For-SDET-2_files/apple.jpeg">
+			</td>
+			<td>
+				<ul>
+						<h3>MacBook Air - Silver - $999</h3>
+						<li>1.6GHz dual-core 8th-generation Intel Core i5 processor, Turbo Boost up to 3.6GHz</li>
+						<li>Retina display</li>
+						<li>8GB 2133MHz LPDDR3 memory</li>
+						<li>128GB SSD storage</li>
+				</ul>
+			</td>
+		</tr>
+		<tr>
+			<td>Promocode</td>
+			<td><input type="text" id="coupon" placeholder="coupon" length="50" fdprocessedid="59uidw"><input type="button" id="couponbtn" value="apply" fdprocessedid="x3f1z"></td>
+		</tr>
+		<tr>
+			<td rowspan="3">Credit Card</td>
+			<td>CC# : <input type="text" id="cc" placeholder="VISA" length="50" fdprocessedid="0o4wjj"></td>
+		</tr>
+		<tr>
+			<td>Year : <input type="text" id="year" placeholder="" length="4" fdprocessedid="4kb8r"></td>
+		</tr><tr>
+			<td>CVV: <input type="text" id="cvv" placeholder="" length="3" fdprocessedid="i1hnn"></td>
+		</tr>
+		<tr>
+			<td>Total</td>
+			<td id="price">999</td>
+		</tr>
+	</tbody>
+</table><br>
+<input type="button" id="buy" value="Buy Now" fdprocessedid="isir4q">
+<br><br>
+<table border="1" width="40%" cellpadding="15">
+	<tbody><tr>
+		<td>Status</td>
+		<td id="status"></td>
+	</tr>
+</tbody></table>
+<hr>
+<h2>Payment Details</h2>
+<ul>
+		<li>Free Promocode : FREEUDEMY</li>
+		<li>Discount Promocode : PARTIALUDEMY</li>
+		<li>Valid CC : 4111111111111111</li>
+		<li>Valid Year : &gt;2022</li>
+		<li>Valid CVV : 123</li>
+</ul>
+<hr>
+<h2>Test cases</h2>
+<ul>
+		<li>Purchase should be successful using valid CC</li>
+		<li>Purchase should be successful using discounted promocode + valid CC</li>
+		<li>Purchase should be successful using FREE promocode</li>
+		<li>Purchase should fail using discounted promocode + invalid CC</li>
+		<li>Purchase should fail using invalid CC</li>
+		<li>Purchase should fail without any payment info</li>
+</ul>
+
+<span id="PING_IFRAME_FORM_DETECTION" style="display: none;"></span></body></html>
